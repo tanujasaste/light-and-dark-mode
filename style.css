@@ -1,0 +1,84 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--primary-color);
+}
+:root{
+    --primary-color: white;
+    --secondary-color:#060606;
+}
+.dark-theme{
+    --primary-color: #060606;
+    --secondary-color:white;
+    
+}
+.container{
+    padding: 100px;
+}
+.container .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.container .navbar h1{
+    color: rgb(241, 13, 13);
+    font-size: 50px;
+}
+.container .navbar .list {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.container .navbar .list li{
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: larger;
+
+}
+.container .navbar .list li a{
+    text-decoration: none;
+    margin: 40px;
+    color: var(--secondary-color);
+
+}
+.container .navbar .list li a:hover{
+    color: rgb(241, 13, 13);
+}
+.container .page img{
+    /* mix-blend-mode: multiply; */
+    position: relative;
+    z-index: 1;
+    border-radius: 10% 30% 50% 70%;
+}
+.container .page{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .page .one{
+    margin-top: 140px;
+    margin-right: 250px;
+}
+.container .page .one h1{
+    font-size:40px;
+}
+.container .page .one{
+    color: var(--secondary-color);
+}
+.container .page .one p{
+    margin-top: 20px;
+}
+.container .page .one button{
+    margin-top: 60px;
+    padding: 8px;
+    border-radius: 7px;
+    background-color:var(--secondary-color);
+    color: var(--primary-color);
+}
+
